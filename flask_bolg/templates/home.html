@@ -1,0 +1,98 @@
+    {% extends "layout.html" %}
+{% block css %}
+    <link
+    rel="stylesheet"
+    href="{{url_for('static',filename='styles/styleshome.css')}}">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        {% endblock %}
+    </head>
+    <body>
+    {% block content %}   
+                    <h1 class="section2" style="color: black; text-align: center ;" > video for you</h1>
+        
+           <aside class="aside">
+            <p style="color: black;font-size: larger; margin-top: 15x; margin-left: 20px;">recommend video</p>
+            {% for video in videos %}
+            {% if video.id <=2 %}
+            <div style="color: black;">
+               <video width="300" height="240"  controls>
+                <source src="static/video/{{video.video_file_name}}" type="video/mp4">
+            your browser is not support this video
+               </video>
+               <p style="color: black;">{{video.video_title}}&nbsp &nbsp{{video.video_size}}<p>
+            <p class="text" style="color: black;"> {{video.video_description}}</p>
+            </div>
+            {% endif %}
+               {% endfor %}
+           </aside>
+            <!--
+            {% for video in videos %}
+            <div>
+                   <video width="350" height="240"  controls>
+                    <source src="static/video/{{video.video_file_name}}" type="video/mp4">
+                your browser is not support this video
+                   </video>
+                   <p>{{video.video_title}}&nbsp &nbsp{{video.video_size}}<p>
+            </div>
+                   {% endfor %}
+        -->
+
+
+           
+        <div class="contain">
+            
+            {% for video in videos %}
+            <div style="color: black;">
+               <video width="350" height="240"  controls>
+                <source src="static/video/{{video.video_file_name}}" type="video/mp4">
+            your browser is not support this video
+               </video>
+               <div style="color: black;">{{video.video_title}}&nbsp &nbsp{{video.video_size}}</div>
+            <p class="text" style="color: black;"> {{video.video_description}}</p>
+            </div>
+               {% endfor %}
+        
+            </div>
+        <h1 class="section" style="color: black; text-align: center ;" > audibook for you</h1>
+
+        <aside class="aside">
+            <p style="color: black;font-size: larger; margin-top: 20px; margin-left: 20px;">recommend audio</p>
+            {% for book in books %}
+               {% if book.id <= 2 %}
+                <div style="color: black;">
+                   <video width="300" height="240"  controls>
+                    <source src="static/book/{{book.audiobook_file_name}}" type="video/mp4">
+                your browser is not support this video
+                   </video>
+                   <div style="color: black;">{{book.audio_book_name}}&nbsp &nbsp{{book.book_size}}</div>
+                <p class="text" style="color: black;"> {{book.audio_book_description}}</p>
+                </div>
+                {% endif %}
+                   {% endfor %}
+           </aside>
+
+            <div class="contain">
+            
+                {% for book in books %}
+                <div style="color: black;">
+                   <video width="350" height="240"  controls>
+                    <source src="static/book/{{book.audiobook_file_name}}" type="video/mp4">
+                your browser is not support this video
+                   </video>
+                   <div style="color: black;">{{book.audio_book_name}}&nbsp &nbsp{{book.book_size}}</div>
+                <p class="text" style="color: black;"> {{book.audio_book_description}}</p>
+                </div>
+                   {% endfor %}
+            
+                </div>
+        
+
+
+                <footer class="space">
+                    <address style="color: black;">
+                    contact us at mikyaswossen@gmail.com &nbsp &nbsp &nbsp tel+251909271567
+                    </address>
+                </footer>
+    {% endblock %}

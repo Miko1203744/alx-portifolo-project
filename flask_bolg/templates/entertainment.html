@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block css %}
+    <link
+    rel="stylesheet"
+    href="{{url_for('static',filename='styles/video.css')}}">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        {% endblock %}
+    </head>
+    <body>
+    {% block content %}
+        
+        <h1 class="section2" style="color: black; text-align: center ;" > video for you</h1>
+        <div class="contain">
+            
+            {% for video in videos %}
+        <div>
+               <video width="350" height="240"  controls>
+                <source src="static/video/{{video.video_file_name}}" type="video/mp4">
+            your browser is not support this video
+               </video>
+               <div style="color: black;">{{video.video_title}}&nbsp &nbsp{{video.video_size}}</div>
+            <p class="text" style="color: black;"> {{video.video_description}}</p>
+            </div>
+               {% endfor %}
+    
+            </div>
+            <footer class="spacs">
+              <address style="color: black;">
+              contact us at mikyaswossen@gmail.com &nbsp &nbsp &nbsp tel+251909271567
+              </address>
+          </footer>
+        
+    {% endblock %}

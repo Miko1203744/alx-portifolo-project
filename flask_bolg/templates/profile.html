@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>profile page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                text-align: center;
+                color: blue;
+
+            }
+
+            body{
+                background-color: aqua;
+            }
+            .img1{
+                
+                position:absolute;
+                left:150px;
+                top:100px;
+            }
+            
+            .img{
+                border-radius: 100px;
+            }
+            .container{
+                position: relative;
+                top:30px;
+                left:200px;
+                height: 320px;
+                width: 500px;
+                background-image: url("{{image_file1}}");
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-color: black;
+                border-style: dashed;
+                
+            }
+            .container-1{
+                height: 320px;
+                width: 500px;
+                border-style: dashed;
+                margin-left: 250px;
+                margin-top: 26px;
+            }
+            .text-1{
+             position: absolute;
+             left: 360px;
+             top:450px;
+            }
+            .text{
+                display: inline-block;
+                padding-top: 20px;
+                width: 150px;
+
+            }
+            .pic{
+                position: relative;
+                right: 50px;
+                padding-top: 10px;
+            }
+            .wish{
+                margin-top: 160px;
+                font-size: x-large;
+            }
+            .a{
+                height: 200px;
+                width: 350px;
+                border-style: dotted;
+                margin-left: 50px;;
+            }
+            .box{
+                display: flex;
+            }
+            .foo{
+                margin-top: 20px;
+             border-style: dotted;
+             height:20px;
+             width: 100%px;
+            }
+            .container-2{
+                display: flex;
+            }
+        </style>
+        <body>
+            <h1 >welcome to profile</h1>
+            <h1>{{ current_user.user_name}}</h1>
+            <div class=container-2>
+            <div class="container">
+            <div class="img1">
+            <img class="img" src="{{ image_file }}" width="200" height="200">
+            </div>
+            <!--<div class="text"> name:</div>
+            <div class="text"> age:</div>
+            <div class="pic"> change your profile picture:</div>
+            </div>-->
+
+            </div>
+            <div class="container-1">
+                    <h1>profile_info</h1>
+                    <form method="POST" action="" enctype="multipart/form-data">
+                    {{form.hidden_tag()}}
+                    <fieldset class="form-group">
+                    <div class="form-group">
+                     {{form.username.label(class="form-contro")}}
+                     {{form.username(class="form-control")}}
+                    </div>
+                    <div>
+                        {{form.userphone_number.label(class="form-contro")}}
+                        {{form.userphone_number(class="form-control")}}
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    {{form.submit(class="")}}
+                </div>
+
+
+                </div>
+            </div>
+            <div class="text-1">
+                <div class="text"> name:&nbsp{{ current_user.user_name}}</div>
+                <div class="text"> age:&nbsp{{current_user.user_age}}</div>
+                <div class="pic"> {{ form.picture.label() }} 
+                                  {{ form.picture() }}
+                                  {% if form.picture.errors %}
+                                  {% for error in form.picture.errors %}
+                                  <span>{{error}}</span>
+                                  {% endfor %}
+                                  {% endif %}
+                
+                <div class="pic"> {{ form.cover_picture.label() }} 
+                    {{ form.cover_picture() }}
+                    {% if form.cover_picture.errors %}
+                    {% for error in form.cover_picture.errors %}
+                    <span>{{error}}</span>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+<!--
+                <div class="wish"> <h5>your &nbsp wish List Video</h5></div>  
+                <div class="box">
+                <div class="a"></div> 
+                <div class="a"></div> 
+                <div class="a"></div>   
+                </div>
+                <div class="wish"> <h5>your &nbsp wish List audiobook</h5></div>  
+                <div class="box">
+                <div class="a"></div> 
+                <div class="a"></div> 
+                <div class="a"></div>   
+                </div>
+
+             <footer class="foo"></footer>
+
+
+        
+    
+            
+            -->
+        </body>
+    </head>
+</html>

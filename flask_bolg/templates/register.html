@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>register page</title>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link rel='stylesheet' type='text/css' media="screen" href="/static/styles/register.css">
+    </head>
+    <body>
+   <div class="wrapper">
+    <div class="header">
+        <div>
+            <h1>KIDOKING</h1>
+        </div>
+    </div>
+   <div class="login__body">
+    <div class="login_box">
+        <div>
+            <h1>welcome to register</h1>
+    <form method="POST" action="">
+     {{form.hidden_tag()}}
+        <div class="form-group">
+         {{form.username.label(class="form-contro")}}
+         {{form.username(class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.userfname.label(class="form-contro")}}
+            {{form.userfname(class="form-control")}}
+        </div>
+        <div  class="form-group">
+            {{form.usergfname.label(class="form-contro")}}
+            {{form.usergfname(class="form-control")}}
+        </div>
+        <div  class="form-group">
+            {{form.userage.label(class="form-contro")}}
+            {{form.userage(class="form-control")}}
+        </div>
+        <div  class="form-group">
+            {{form.usergender.label(class="form-contro")}}
+            {{form.usergender(class="form-contro")}}
+        </div>
+        <div  class="form-group">
+            {{form.userphone_number.label(class="form-contro")}}
+            {{form.userphone_number(class="form-control")}}
+        </div>
+        <div  class="form-group">
+            {{form.userCountry.label(class="form-contro")}}
+            {{form.userCountry(class="form-control")}}
+    
+        </div>
+        <div class="form-group">
+            {{form.submit(class="btn")}}
+            <p>if you have already an account?<a href="login" >login</a></p>
+           
+        </div>
+    </form>
+   </div>
+   </div>
+    </div>
+    
+   </div >
+   <div class="page2">
+
+   </div>
+   <footer>
+    <address style="color: black;">
+    contact us at mikyaswossen@gmail.com &nbsp &nbsp &nbsp tel+251909271567
+    </address>
+    </body>
+</html>

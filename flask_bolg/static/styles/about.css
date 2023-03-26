@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+#backing{
+    background: url("/static/images/pic.jpg");
+    background-size: cover;
+    height: 730px;
+    border-bottom: 8px solid #222;
+
+}
+
+.background{
+    background: rgb(0,0,0,-4);
+    height: 100.1%;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between
+}
+.title{
+    color: red;
+}
+.links{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1150px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    background-color: red;
+}
+.main{
+    text-align: center;
+    padding: 75px 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.main h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+
+}
+.main p{
+    font-size: 1.625rem;
+}
+.tv{
+    background: url("/static/images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: #222;
+
+    background-color: black;
+    border-bottom: 9px solid #222;
+    height: 730px;
+    padding: 70px 45px
+}

@@ -1,0 +1,50 @@
+.vid{
+    color: black;
+}
+.contain{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    grid-column-gap: 90px;
+    grid-row-gap: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.aside{
+    color: red;
+    border-style:dotted;
+    height: 920px;
+    width: 300px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+
+}
+.contain p{
+    color: black;
+}
+.section2{
+    color: black;
+    border-bottom: 9px solid #222;
+    border-top: 9px solid #222;
+
+
+}
+.section{
+    margin-top: 220px;
+    color: black;
+    border-bottom: 9px solid #222;
+    border-top: 9px solid #222;
+
+}
+.space{
+    margin-top: 240px;
+    color: black;
+    border-style:double;
+}
+.text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow:auto;
+}

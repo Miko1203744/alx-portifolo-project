@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>login page</title>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link rel='stylesheet' type='text/css' media="screen" href="/static/styles/stylespage1.css">
+    </head>
+    <body>
+   <div class="wrapper">
+    <div class="header">
+        <div>
+            <h1>KIDOKING</h1>
+        </div>
+    </div>
+   <div class="login__body">
+    <div class="login_box">
+        <div>
+            <h1>welcome to Login</h1>
+    <form method="POST" action="">
+     {{form.hidden_tag()}}
+        <div class="form-group">
+         {{form.username.label(class="form-contro")}}
+         {{form.username(class="form-control")}}
+        </div>
+        <div class="form-group">
+        {{form.password.label(class="form-contro")}}
+        {{form.password(class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.remember(class="form-contro")}}
+            {{form.remember.label(class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.submit(class="btn")}}
+        </div>
+    </form>
+   </div>
+   </div>
+    </div>
+   </div>
+   <footer>
+    <address style="color: black;">
+    contact us at mikyaswossen@gmail.com &nbsp &nbsp &nbsp tel+251909271567
+    </address>
+    </body>
+</html>
