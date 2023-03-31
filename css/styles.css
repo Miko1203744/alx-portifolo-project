@@ -120,8 +120,7 @@ nav .nav-list li.btn:hover a{
     margin-top: 50px;
     width: 100%px;
     height: 100%px;
-    min-height: 80vh;/*
-    color: black;*/
+    min-height: 100vh;
     border-bottom: 9px solid black;
 }
 .y img{
