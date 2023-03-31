@@ -16,7 +16,14 @@ body{
     position:sticky;
     top: 0px;
 
-
+}
+.title{
+    text-align: center;
+    margin-top: 200px;
+}
+.title h1{
+    font-size: 100px;
+    color: #2ecc71;
 }
 .hero{
     width: 100%;
@@ -233,5 +240,20 @@ nav .nav-list li.btn a{
 nav .nav-list.open{
     right: 0;
 
+}
+.o{
+    flex-direction: column;
+}
+.title h1{
+    font-size: 60px;
+}
+.n{
+    margin-left: 0;
+}
+.t{
+    margin-left: 0;
+}   
+.t img{
+ width: 400px;   
 }
 }
