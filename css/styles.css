@@ -13,17 +13,9 @@ body{
     max-width: 95%;
     margin: 0 auto;
     padding: 0px 20px;
-    position:sticky;
     top: 0px;
 
-}
-.title{
-    text-align: center;
-    margin-top: 200px;
-}
-.title h1{
-    font-size: 100px;
-    color: #2ecc71;
+
 }
 .hero{
     width: 100%;
@@ -109,6 +101,14 @@ color: #2ecc71;
 font-weight: 500px;
 
 }
+.title{
+    text-align: center;
+    margin-top: 200px;
+}
+.title h1{
+    font-size: 100px;
+    color: #2ecc71;
+}
 nav .nav-list li.btn:hover a{
     background: #2ecc71;
     color: white;
@@ -127,7 +127,8 @@ nav .nav-list li.btn:hover a{
     margin-top: 50px;
     width: 100%px;
     height: 100%px;
-    min-height: 100vh;
+    min-height: 100vh;/*
+    color: black;*/
     border-bottom: 9px solid black;
 }
 .y img{
@@ -155,6 +156,7 @@ nav .nav-list li.btn:hover a{
 .x img{
     border-radius: 20px;
 }
+
 .social a{
     width:37px;
     height:37px;
@@ -176,7 +178,7 @@ nav .nav-list li.btn:hover a{
 }
 
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 930px) {
  nav .hamb{
     display: initial;
  }
@@ -206,7 +208,7 @@ nav .nav-list{
     right:-65%;
     bottom: 0;
     width: 60%;
-    height: 300%;
+    height: 60%;
     background: black;
     z-index: 2;
     padding: 6% 9%;
